@@ -13,6 +13,7 @@ class App extends Component {
 		return(
 			<div>
 			<GradeDisplay />
+			<div>for test git</div>
 			</div>
 		)
 	}
