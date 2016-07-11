@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux'
 
-export default class SexFilter extends Component {
+class SexFilter extends Component {
+
+	static propTypes() {
+		dispatch: propTypes.func.isRequired
+	}
 
 	constructor(props) {
 		super(props)
 	}
 
 	handleChange(e) {
-		const {sexFilter} = this.props;
-		sexFilter(e.target.value,'sex');
+		//const {sexFilter} = this.props;
+		//sexFilter(e.target.value,'sex');
 		console.log(e);
+		dispatch(setVisibilityFilter('sex',e.target.value));
 	}
 
 	render() {
@@ -26,3 +32,7 @@ export default class SexFilter extends Component {
 		)
 	}
 }
+
+SexFilter = connect()(SexFilter)
+
+export default SexFilter
