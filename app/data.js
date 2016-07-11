@@ -1,0 +1,41 @@
+const data = [{
+		"name" : "张三",
+		"sex" : "男",
+		"english" : "90分",
+		"math" : "80分",
+		"operation" : ["修改","删除"],
+		"_id": 0
+	},
+	{
+		"name" : "张三",
+		"sex" : "男",
+		"english" : "66分",
+		"math" : "55分",
+		"operation" : ["修改","删除"],
+		"_id": 1
+	},
+	{
+		"name" : "李四",
+		"sex" : "男",
+		"english" : "85分",
+		"math" : "75分",
+		"operation" : ["修改","删除"],
+		"_id": 2
+	},
+	{
+		"name" : "雯雯",
+		"sex" : "女",
+		"english" : "60分",
+		"math" : "90分",
+		"operation" : ["修改","删除"],
+		"_id": 3
+	},{
+		"name" : "雯雯",
+		"sex" : "女",
+		"english" : "77分",
+		"math" : "99分",
+		"operation" : ["修改","删除"],
+		"_id": 4
+	}]
+
+export default data
